@@ -1,4 +1,4 @@
-package xyz.epicleague.contract.nft.v2;
+package contracts.nft.v2;
 
 import io.reactivex.Flowable;
 import java.math.BigInteger;
