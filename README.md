@@ -1,1 +1,1 @@
-"# smart-contracts-java" 
+# Smart Contracts - Java
