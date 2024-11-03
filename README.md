@@ -23,4 +23,5 @@ web3j generate truffle -o .\generated-java -p contracts.nft.v1 --truffle-json=.\
 web3j generate truffle -o .\generated-java -p contracts.nft.v1 --truffle-json=.\build\contracts\TotemBoxLaunchpad.json
 web3j generate truffle -o .\generated-java -p contracts.nft.v1 --truffle-json=.\build\contracts\TotemBoxOpener.json
 web3j generate truffle -o .\generated-java -p contracts.nft.v1 --truffle-json=.\build\contracts\TotemBoxWhitelist.json
+web3j generate truffle -o .\generated-java -p contracts.tokenomics --truffle-json=.\build\contracts\DepositEPL.json
 ```
