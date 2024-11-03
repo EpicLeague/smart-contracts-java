@@ -3,6 +3,14 @@
 ## Web3j generation command
 ```web3j generate truffle --truffle-json=<json_path> -o .\generated-java -p contracts.<sub_packagename>``` 
 
+## For smart-contract project
+
+```
+web3j generate truffle --truffle-json=.\artifacts\contracts\nft\v2\Memento.sol\Memento.json -o .\generated-java -p contracts.nft.v2
+web3j generate truffle --truffle-json=.\artifacts\contracts\nft\v2\MysteryBoxOpener.sol\MysteryBoxOpener.json -o .\generated-java -p contracts.nft.v2
+web3j generate truffle --truffle-json=.\artifacts\contracts\nft\v2\MysteryBox.sol\MysteryBox.json -o .\generated-java -p contracts.nft.v2
+```
+
 ### For epl-contract project
 ```
 web3j generate truffle -o .\generated-java -p contracts.tokenomics --truffle-json=.\build\contracts\Treasury.json 
