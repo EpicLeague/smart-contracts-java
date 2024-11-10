@@ -77,7 +77,7 @@ public class ContractAddressHolder {
             entry(ContractAlias.totem_rental, Map.of(
                     NetworkId.BNB_TESTNET, List.of("0x98d91bB259DF8889b51fa703d73743eF36c81aD1"),
                     NetworkId.HMV_TESTNET, List.of("0x5EA92Fe836DdEfd4F5A6dB6D2012b3F1C1c3dD6F"),
-                    NetworkId.BNB_MAINNET, List.of(""),
+                    NetworkId.BNB_MAINNET, List.of("0x055695bE82229dA0d2e8fA17A78AC1a1170251E1"),
                     NetworkId.POLYGON_MAINNET, List.of("0x940648c77E1a282e5D814869c6c301598777E5CC"),
                     NetworkId.HMV_MAINNET, List.of("0x496ceE13203d22A060D5E0b97F75E5C39E556ee4")
             )),
