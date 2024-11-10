@@ -34,13 +34,11 @@ public class ContractHolder {
             ContractAlias.treasury_vesting, TreasuryVestingWallet.class
     );
 
-    public static Contract loadContract(ContractAlias alias, String contractAddress, Web3j web3j,
-                                        TransactionManager txManager, ContractGasProvider gasProvider) {
-        if (!contractMap.containsKey(alias)) {
-            throw new IllegalArgumentException("Unknown ContractAlias: " + alias);
-        }
-
-        Class<? extends Contract> contractClass = contractMap.get(alias);
+    @SuppressWarnings("unchecked")
+    public static <T extends Contract> T loadContract(ContractAlias alias, String contractAddress, Web3j web3j,
+                                                      TransactionManager txManager, ContractGasProvider gasProvider) {
+        // Get the contract class directly from the alias
+        Class<T> contractClass = (Class<T>) alias.getContractClass();
         if (contractClass == null) {
             throw new IllegalArgumentException("No contract class mapped for alias: " + alias);
         }
@@ -49,7 +47,7 @@ public class ContractHolder {
             // Use reflection to find the static "load" method
             Method loadMethod = contractClass.getMethod("load", String.class, Web3j.class, TransactionManager.class, ContractGasProvider.class);
             // Invoke the "load" method with provided arguments
-            return (Contract) loadMethod.invoke(null, contractAddress, web3j, txManager, gasProvider);
+            return (T) loadMethod.invoke(null, contractAddress, web3j, txManager, gasProvider);
         } catch (Exception e) {
             throw new RuntimeException("Failed to load contract for alias: " + alias, e);
         }
