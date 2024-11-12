@@ -7,6 +7,7 @@ import contracts.nft.v2.Memento;
 import contracts.nft.v2.MysteryBox;
 import contracts.nft.v2.MysteryBoxOpener;
 import contracts.tokenomics.DepositEPL;
+import contracts.tokenomics.EpicLeague;
 import contracts.tokenomics.Treasury;
 import contracts.tokenomics.TreasuryVestingWallet;
 
@@ -23,7 +24,7 @@ public class ContractHolder {
 
     private static final Map<ContractAlias, Class<? extends Contract>> contractMap = Map.of(
             ContractAlias.treasury, Treasury.class,
-//            ContractAlias.epl, ,
+            ContractAlias.epl, EpicLeague.class,
             ContractAlias.deposit_epl, DepositEPL.class,
             ContractAlias.memento, Memento.class,
             ContractAlias.mysterybox, MysteryBox.class,

@@ -5,6 +5,7 @@ import contracts.nft.v2.Memento;
 import contracts.nft.v2.MysteryBox;
 import contracts.nft.v2.MysteryBoxOpener;
 import contracts.tokenomics.DepositEPL;
+import contracts.tokenomics.EpicLeague;
 import contracts.tokenomics.Treasury;
 import contracts.tokenomics.TreasuryVestingWallet;
 import org.web3j.tx.Contract;
@@ -24,7 +25,7 @@ import org.web3j.tx.Contract;
  */
 public enum ContractAlias {
     deposit_epl(DepositEPL.class),
-//    epl,
+    epl(EpicLeague.class),
     memento(Memento.class),
     mysterybox(MysteryBox.class),
     mysterybox_opener(MysteryBoxOpener.class),

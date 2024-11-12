@@ -16,14 +16,14 @@ public class ContractAddressHolder {
                     NetworkId.ETH_MAINNET, List.of("0x647aae7b6b1c46de037111657a50297da34fc359"),
                     NetworkId.HMV_MAINNET, List.of("0x533b75295dafb91AdDaca442c1c83dF1d8819D39")
             )),
-//            entry(ContractAlias.epl, Map.of(
-//                    NetworkId.BNB_TESTNET, List.of("0x0851d9fd9339f5a06c5646df939bb6ae4aa36b46"),
-//                    NetworkId.HMV_TESTNET, List.of("0x33FFcD33Baa26D0Aa2f359Edc883cA8626d05b6e"),
-//                    NetworkId.BNB_MAINNET, List.of("0x1236ea13c7339287Cd00AB196aAA8217006b04dc"),
-//                    NetworkId.POLYGON_MAINNET, List.of("0x1236ea13c7339287Cd00AB196aAA8217006b04dc"),
-//                    NetworkId.ETH_MAINNET, List.of("0x1236ea13c7339287Cd00AB196aAA8217006b04dc"),
-//                    NetworkId.HMV_MAINNET, List.of("0x9e1028F5F1D5eDE59748FFceE5532509976840E0")
-//            )),
+            entry(ContractAlias.epl, Map.of(
+                    NetworkId.BNB_TESTNET, List.of("0x0851d9fd9339f5a06c5646df939bb6ae4aa36b46"),
+                    NetworkId.HMV_TESTNET, List.of("0x33FFcD33Baa26D0Aa2f359Edc883cA8626d05b6e"),
+                    NetworkId.BNB_MAINNET, List.of("0x1236ea13c7339287Cd00AB196aAA8217006b04dc"),
+                    NetworkId.POLYGON_MAINNET, List.of("0x1236ea13c7339287Cd00AB196aAA8217006b04dc"),
+                    NetworkId.ETH_MAINNET, List.of("0x1236ea13c7339287Cd00AB196aAA8217006b04dc"),
+                    NetworkId.HMV_MAINNET, List.of("0x9e1028F5F1D5eDE59748FFceE5532509976840E0")
+            )),
             entry(ContractAlias.deposit_epl, Map.of(
                     NetworkId.BNB_TESTNET, List.of("0xa259c9f11561d8459c870a3bd7e402be2c83ab5b"),
                     NetworkId.HMV_TESTNET, List.of("0x59ddd709c7a38fe31a3920B7740cf6D12F7135f2"),
