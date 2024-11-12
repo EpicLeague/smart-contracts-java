@@ -13,6 +13,7 @@ web3j generate truffle --truffle-json=.\artifacts\contracts\nft\v2\MysteryBox.so
 
 ### For epl-contract project
 ```
+web3j generate truffle -o .\generated-java -p contracts.tokenomics --truffle-json=.\build\contracts\EpicLeague.json 
 web3j generate truffle -o .\generated-java -p contracts.tokenomics --truffle-json=.\build\contracts\Treasury.json 
 web3j generate truffle -o .\generated-java -p contracts.tokenomics --truffle-json=.\build\contracts\TreasuryVestingWallet.json 
 web3j generate truffle -o .\generated-java -p contracts.nft.v1 --truffle-json=.\build\contracts\TotemRental.json 
